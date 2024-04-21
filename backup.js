@@ -50,7 +50,7 @@ import fs from 'fs/promises'
     await $`git fetch ${name} -p`
     await $`git branch -D ${name} &>/dev/null || true`
     await $`git checkout -b ${name} ${name}/${item.branch}`
-    await $`git push -u origin ${name} ${name}`
+    await $`git push -u origin ${name}`
     // let cp = 'cp -r ' + path.resolve('./') + ' ' +  path.resolve(tmp, name)
     // console.log(cp)
     // await $(cp)
