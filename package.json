@@ -1,0 +1,21 @@
+{
+  "name": "backup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backup.js",
+  "scripts": {
+    "start": "node ./backup.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "make-dir": "^4.0.0",
+    "rimraf": "^5.0.5",
+    "zx": "^7.2.3"
+  },
+  "type": "module",
+  "packageManager": "yarn@4.1.1",
+  "installConfig": {
+    "pnp": true
+  }
+}
