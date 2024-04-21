@@ -51,9 +51,9 @@ import fs from 'fs/promises'
     await $`git branch -D ${name} &>/dev/null || true`
     await $`git checkout -b ${name} ${name}/${item.branch}`
 
-    let cp = 'cp -r ' + path.resolve('./') + ' ' +  path.resolve(tmp, name)
-    console.log(cp)
-    await $(cp)
+    // let cp = 'cp -r ' + path.resolve('./') + ' ' +  path.resolve(tmp, name)
+    // console.log(cp)
+    // await $(cp)
     // await copyDir()
     // await copyDir('./', tmp)
 
@@ -63,6 +63,8 @@ import fs from 'fs/promises'
     // await $`git checkout main`
     // await $`git merge ${name} --allow-unrelated-histories`
   }
+
+  await $`git push --all`
 })()
 
 
